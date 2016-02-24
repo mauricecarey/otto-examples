@@ -1,0 +1,9 @@
+application {
+  name = "postgres"
+  type = "docker-external"
+} 
+
+customization {
+  image = "postgres:9.4"
+  run_args = "-p 5432:5432 -e POSTGRES_USER=hello -e POSTGRES_DB=hello -e POSTGRES_PASSWORD=Passw0rd"
+}
